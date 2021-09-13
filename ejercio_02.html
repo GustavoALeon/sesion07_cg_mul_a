@@ -10,14 +10,14 @@
         function rotateT(n)
         {
             if(n==1)
-            {
+            {                
                 ctx.save();
                 ctx.fillStyle='#FFFFFF';
                 ctx.fillRect(30,30,100,100);
                 ctx.translate(80, 80); // translate to rectangle center
                           // x = x + 0.5 * width
                           // y = y + 0.5 * height
-                ctx.rotate((Math.PI / 180) * -45); // rotate
+                ctx.rotate(deg2rad(-45)); // rotate
                 ctx.translate(-80,-80); // translate back  
                 ctx.fillStyle='#0095DD';
                 ctx.fillRect(30,30,100,100);
@@ -31,7 +31,7 @@
                 ctx.translate(200, 80); // translate to rectangle center
                           // x = x + 0.5 * width
                           // y = y + 0.5 * height
-                ctx.rotate((Math.PI / 180) * 45); // rotate
+                ctx.rotate(deg2rad(45)); // rotate
                 ctx.translate(-200,-80); // translate back  
                 ctx.fillStyle='#0095DD';
                 ctx.fillRect(150,30,100,100);
